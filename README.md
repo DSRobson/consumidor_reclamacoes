@@ -50,4 +50,53 @@ O dataset original era um arquivo CSV único com mais de 1 milhão de linhas —
 
 Principais transformações realizadas:
 
-- **Modelagem em estrela (Star Schema):** a tabela única foi desmembrada em tabela fato + tabelas dimensão
+- **Modelagem em estrela (Star Schema):** a tabela única foi desmembrada em tabela fato + tabelas dimensão, com criação de IDs para cada entidade (empresa, assunto, canal, serviço, estado, município)
+- Tratamento de valores nulos e inconsistências
+- Padronização de tipos de dados
+- Remoção de colunas redundantes da tabela fato
+
+---
+
+## 📊 Dashboard Interativo
+
+🔗 **[Acesse o dashboard publicado aqui](https://app.powerbi.com/view?r=eyJrIjoiODgyMGM0MTItMTUxOC00YjkzLWJmYzgtNGFiNjg5NzUwNjZmIiwidCI6IjFlN2FkZDRmLTMwMWEtNGQ1NC1iNjM1LTM1Njg1YWU3NjA1ZSJ9)**
+
+**Preview:**
+
+![Dashboard](imagem/dashboard_preview.png)
+
+**Modelo de dados (Star Schema):**
+
+![Modelo](imagem/modelo_estrela.png)
+
+---
+
+## 📁 Estrutura do Projeto
+
+consumidor_reclamacoes/
+├── dados/
+│   └── fonte.md                         # link e descrição da fonte oficial dos dados
+├── docs/
+│   └── dicionario_dados.md              # descrição das colunas e tabelas
+├── imagem/
+│   ├── dashboard_preview.png            # print do dashboard principal
+│   └── modelo_estrela.png               # print do modelo de dados
+└── README.md
+
+---
+
+## 📂 Fonte dos Dados
+
+Os dados são públicos e disponibilizados pela **Anatel** (Agência Nacional de Telecomunicações):
+
+🔗 [https://dados.anatel.gov.br](https://dados.anatel.gov.br)
+
+---
+
+## 👨‍💻 Autor
+
+**Robson Willian Alves de Brito**
+Estudante de Análise e Desenvolvimento de Sistemas | Transição para Dados
+
+🔗 [LinkedIn](https://www.linkedin.com/in/robson-willian-ds/)
+💻 [GitHub](https://github.com/DSRobson)
