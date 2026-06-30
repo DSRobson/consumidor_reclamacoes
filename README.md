@@ -76,7 +76,7 @@ Principais transformações realizadas:
 ```
 consumidor_reclamacoes/
 ├── dados/
-│   └── reclamacoes_anatel_amostra.csv   # amostra do dataset original
+│   └── fonte.md                         # link e descrição da fonte oficial dos dados
 ├── docs/
 │   └── dicionario_dados.md              # descrição das colunas e tabelas
 ├── imagem/
